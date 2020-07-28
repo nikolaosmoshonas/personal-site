@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 
-import AboutMe from "@/views/Home";
+import AboutMe from "@/views/AboutMe";
 import Home from "@/views/Home";
 import Projects from "@/views/Projects";
 

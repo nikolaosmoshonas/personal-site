@@ -16,7 +16,7 @@
 
     <v-navigation-drawer v-model="drawer" temporary fixed>
       <v-list nav dense>
-        <v-list-item v-for="link in links" :key="link.text" :to="link.route" active-class="deep-purple--text text--accent-4">
+        <v-list-item v-for="link in links" :key="link.text" :to="link.route" active-class="accent">
 
             <v-list-item-icon>
               <v-icon>{{link.icon}}</v-icon>
