@@ -9,6 +9,7 @@
       src="@/assets/pics/banner_nav_c.jpg"
       app
     >
+
       <v-app-bar-nav-icon
         color="black"
         @click="drawer = true"
