@@ -2,16 +2,17 @@
   <div class="container">
    Home
   </div>
-
-
 </template>
 
 <script>
 export default {
-  name: "Home"
-}
+  name: "Home",
+  data: () => ({
+    typeData: "",
+    listData: []
+  }),
+
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

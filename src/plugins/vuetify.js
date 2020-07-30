@@ -15,7 +15,8 @@ export default new Vuetify({
             dark:{
                 primary: colors.blueGrey.darken2,
                 secondary: colors.blueGrey.darken3,
-                accent: colors.amber.accent4
+                accent: colors.amber.accent4,
+                linkColor: colors.blue.lighten3
             },
         },
     },

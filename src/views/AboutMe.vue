@@ -2,13 +2,13 @@
   <div class="container">
     <v-container>
       <v-row dense align="center">
-        <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
-          <v-card class="mx-auto mb-6 primary" :max-width="card.width">
+        <v-col class="mt-15" v-for="card in cards" :key="card.title" md="6" cols="12">
+          <v-card class="mx-auto mb-6 primary sm4" max-width="600"  >
             <v-img
-              :src="card.src"
-              class="white--text align-end"
-              gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-              height="200px"
+                :src="card.src"
+                class="white--text align-end"
+                gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+                height="200px"
             >
             </v-img>
 
@@ -23,7 +23,7 @@
 
               <v-btn :key="card.title" icon @click="card.show = !card.show">
                 <v-icon
-                  >{{ card.show ? "mdi-chevron-up" : "mdi-chevron-down" }}
+                >{{ card.show ? "mdi-chevron-up" : "mdi-chevron-down" }}
                 </v-icon>
               </v-btn>
             </v-card-actions>
@@ -35,6 +35,11 @@
                 <v-card-text>
                   {{ card.text }}
                 </v-card-text>
+
+                <v-card-text>
+                  <a class="linkColor--text" v-bind:href="card.link" target="_blank">{{card.link}}</a>
+                </v-card-text>
+
               </div>
             </v-expand-transition>
           </v-card>
@@ -52,18 +57,19 @@ export default {
       {
         title: "Pre-fab homes",
         subtitle: "Hello",
-        src: "https://i.pinimg.com/originals/81/9a/fb/819afb3e0e2af2404ec09c81d078e1a5.jpg",
+        src: require('@/assets/pics/php_logo.jpg'),
         flex: 12,
-        width: "600px",
+        width: "800",
         text: "Hello",
-        show: false
+        show: false,
+        link: "https://google.com"
       },
       {
         title: "Favorite road trips",
         subtitle: "Hello",
-        src: "https://cdn.vuetifyjs.com/images/cards/road.jpg",
-        flex: 12,
-        width: "800px",
+        src: require('@/assets/pics/banner_nav_c.jpg'),
+        flex: 6,
+        width: "600",
         text: "Hello",
         show: false
       },
@@ -71,7 +77,7 @@ export default {
         title: "Best airlines",
         subtitle: "Hello",
         src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-        flex: 12,
+        flex: 6,
         width: "600px",
         show: false
       },

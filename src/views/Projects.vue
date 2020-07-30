@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-Projects
+
 </div>
 
 
@@ -8,7 +8,10 @@ Projects
 
 <script>
     export default {
-        name: "Projects"
+        name: "Projects",
+      data: () => ({
+
+      })
     }
 </script>
 
