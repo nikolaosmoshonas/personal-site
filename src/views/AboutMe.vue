@@ -67,7 +67,7 @@ export default {
       {
         title: "Favorite road trips",
         subtitle: "Hello",
-        src: require('@/assets/pics/banner_nav_c.jpg'),
+        src: require('@/assets/pics/banner.svg'),
         flex: 6,
         width: "600",
         text: "Hello",

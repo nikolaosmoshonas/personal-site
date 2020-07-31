@@ -5,7 +5,7 @@
       :collapse-on-scroll="collapseOnScroll"
       flat
       shrink-on-scroll
-      src="@/assets/pics/banner.svg"
+      color="#e9dcc8"
       app
     >
 
