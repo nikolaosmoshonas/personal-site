@@ -4,11 +4,11 @@
       dark
       :collapse-on-scroll="collapseOnScroll"
       flat
-      prominent
       shrink-on-scroll
       src="@/assets/pics/banner_nav_c.jpg"
       app
     >
+
 
       <v-app-bar-nav-icon
         color="black"
