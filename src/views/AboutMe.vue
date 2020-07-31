@@ -5,9 +5,8 @@
         <v-col class="mt-15" v-for="card in cards" :key="card.title" md="6" cols="12">
           <v-card class="mx-auto mb-6 primary sm4" max-width="600"  >
             <v-img
-                :src="card.src"
+
                 class="white--text align-end"
-                gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
                 height="200px"
             >
             </v-img>
@@ -57,7 +56,7 @@ export default {
       {
         title: "Pre-fab homes",
         subtitle: "Hello",
-        src: require('@/assets/pics/php_logo.jpg'),
+        //src: require('@/assets/pics/php_logo.jpg'),
         flex: 12,
         width: "800",
         text: "Hello",
@@ -67,7 +66,7 @@ export default {
       {
         title: "Favorite road trips",
         subtitle: "Hello",
-        src: require('@/assets/pics/banner.svg'),
+        //src: require('@/assets/pics/php_logo.jpg'),
         flex: 6,
         width: "600",
         text: "Hello",
@@ -76,7 +75,7 @@ export default {
       {
         title: "Best airlines",
         subtitle: "Hello",
-        src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
+        //src: require("@/assets/pics/php_logo.jpg"),
         flex: 6,
         width: "600px",
         show: false
@@ -84,7 +83,7 @@ export default {
       {
         title: "Best airlines",
         subtitle: "Hello",
-        src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
+        //src: require("@/assets/pics/php_logo.jpg"),
         flex: 12,
         width: "600px",
         show: false

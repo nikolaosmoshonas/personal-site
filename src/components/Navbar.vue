@@ -1,11 +1,10 @@
 <template>
   <nav>
-    <v-app-bar
+    <v-app-bar id="appbar"
       dark
       :collapse-on-scroll="collapseOnScroll"
       flat
       shrink-on-scroll
-      color="#e9dcc8"
       app
     >
 
@@ -24,6 +23,7 @@
           href="https://google.com"
           class=" white--text text-decoration-none"
           target="_blank"
+
           ><v-icon>mdi-linkedin</v-icon></a
         >
       </v-btn>
@@ -37,14 +37,18 @@
         >
       </v-btn>
 
-      <v-btn icon>
-        <a
-          href="https://google.com"
-          class=" white--text text-decoration-none"
-          target="_blank"
-          ><v-icon>mdi-dots-vertical</v-icon></a
-        >
-      </v-btn>
+  <v-switch
+      class="mt-3 ml-3"
+
+            v-model="$vuetify.theme.dark"
+            hide-details
+            inset
+            label="Theme"
+
+  ></v-switch>
+
+
+
     </v-app-bar>
 
     <v-navigation-drawer v-model="drawer" temporary fixed>
@@ -79,9 +83,15 @@ export default {
         text: "Projects",
         route: "/projects"
       }
-    ]
+    ],
   })
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+
+#appbar{
+  background: linear-gradient(to right, #3e5151, #decba4);
+}
+
+</style>

@@ -18,6 +18,12 @@ export default new Vuetify({
                 accent: colors.amber.accent4,
                 linkColor: colors.blue.lighten3
             },
+            light:{
+                primary: colors.blueGrey.darken2,
+                secondary: colors.blueGrey.darken3,
+                accent: colors.amber.accent4,
+                linkColor: colors.blue.lighten3
+            }
         },
     },
 });
