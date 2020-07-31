@@ -5,9 +5,10 @@
       :collapse-on-scroll="collapseOnScroll"
       flat
       shrink-on-scroll
-      src="@/assets/pics/banner_nav_c.jpg"
+      src="@/assets/pics/banner.svg"
       app
     >
+
 
 
       <v-app-bar-nav-icon
@@ -20,7 +21,7 @@
 
       <v-btn icon>
         <a
-          href="https:google.com"
+          href="https://google.com"
           class=" white--text text-decoration-none"
           target="_blank"
           ><v-icon>mdi-linkedin</v-icon></a
@@ -29,7 +30,7 @@
 
       <v-btn icon>
         <a
-          href="https:google.com"
+          href="https://google.com"
           class=" white--text text-decoration-none"
           target="_blank"
           ><v-icon>mdi-github</v-icon></a
@@ -38,7 +39,7 @@
 
       <v-btn icon>
         <a
-          href="https:google.com"
+          href="https://google.com"
           class=" white--text text-decoration-none"
           target="_blank"
           ><v-icon>mdi-dots-vertical</v-icon></a
