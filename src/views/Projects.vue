@@ -58,13 +58,13 @@ export default {
       {
         title: "Diese Webseite / Meine persönliche Webseite",
         subtitle: "Made by Nikolaos Moshonas",
-        //src: require('@/assets/pics/php_logo.jpg'),
+        src: require('@/assets/pics/profile_picture.jpg'),
         flex: 12,
         width: "800",
-        text: "Hello<br/>Hello",
+        text: "Für meine Bewerbungen und mein Profil habe ich diese Webseite selber gestaltet und umgesetzt mit Vue.js ",
         show: false,
         linkText: "Meine Webseite auf Github",
-        link: "https://google.com"
+        link: "https://github.com/nikolaosmoshonas/personal-site"
       },
       {
         title: "QR Notes",
@@ -92,14 +92,6 @@ export default {
         linkText: "Material Ausleihe System",
         link: "http://flyingteachers.net/material/mas/",
 
-      },
-      {
-        title: "Best airlines",
-        subtitle: "Hello",
-        //src: require("@/assets/pics/php_logo.jpg"),
-        flex: 12,
-        width: "600px",
-        show: false
       }
     ]
   })
