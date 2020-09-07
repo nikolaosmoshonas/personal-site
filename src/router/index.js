@@ -8,6 +8,7 @@ import Projects from "@/views/Projects";
 Vue.use(VueRouter);
 
 const routes = [
+
   {
     path: "/",
     name: "home",
@@ -20,8 +21,8 @@ const routes = [
     component: AboutMe
   },
   {
-    path: "/project",
-    name: Projects,
+    path: "/projects",
+    name: "Projects",
     component: Projects
   }
 ];

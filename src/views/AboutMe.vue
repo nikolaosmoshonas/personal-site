@@ -1,96 +1,48 @@
 <template>
   <div class="container">
-    <v-container>
-      <v-row dense align="center">
-        <v-col class="mt-15" v-for="card in cards" :key="card.title" md="6" cols="12">
-          <v-card class="mx-auto mb-6 primary sm4" max-width="600"  >
-            <v-img
 
-                class="white--text align-end"
-                height="200px"
-            >
-            </v-img>
+    <my-person></my-person>
 
-            <v-card-title >{{ card.title }}</v-card-title>
+    <v-timeline class="mt-15" :class='this.$vuetify.breakpoint.sm < this.$vuetify.breakpoint.xs ? "v-timeline--dense" : ""'>
+      <v-timeline-item v-for="(data,d) in jsonData" :key="d">
+        <template v-slot:icon>
+          <v-avatar size="60">
+            <img :src="data.link">
+          </v-avatar>
+        </template>
+        <h2 class="accent--text" slot="opposite">{{ data.timelineTitle }}</h2>
+        <v-card class="elevation-5 rounded-lg">
+          <v-card-title class="headline">{{ data.cardTitle }}</v-card-title>
+          <v-card-text class="text-h6" v-html="data.cardText">
+            {{ data.cardText }}
+          </v-card-text>
+        </v-card>
+      </v-timeline-item>
+    </v-timeline>
 
-            <v-card-subtitle class="accent--text">
-              {{ card.subtitle }}
-            </v-card-subtitle>
-
-            <v-card-actions>
-              <v-spacer></v-spacer>
-
-              <v-btn :key="card.title" icon @click="card.show = !card.show">
-                <v-icon
-                >{{ card.show ? "mdi-chevron-up" : "mdi-chevron-down" }}
-                </v-icon>
-              </v-btn>
-            </v-card-actions>
-
-            <v-expand-transition >
-              <div class="secondary" v-show="card.show">
-                <v-divider></v-divider>
-
-                <v-card-text>
-                  {{ card.text }}
-                </v-card-text>
-
-                <v-card-text>
-                  <a class="linkColor--text" v-bind:href="card.link" target="_blank">{{card.link}}</a>
-                </v-card-text>
-
-              </div>
-            </v-expand-transition>
-          </v-card>
-        </v-col>
-      </v-row>
-    </v-container>
   </div>
+
 </template>
 
 <script>
+import states from "../assets/data.json";
+import MyPerson from "@/components/myPerson";
 export default {
-  name: "AboutMe",
+  name: "Projects",
+  components: {MyPerson},
   data: () => ({
-    cards: [
-      {
-        title: "Pre-fab homes",
-        subtitle: "Hello",
-        //src: require('@/assets/pics/php_logo.jpg'),
-        flex: 12,
-        width: "800",
-        text: "Hello",
-        show: false,
-        link: "https://google.com"
-      },
-      {
-        title: "Favorite road trips",
-        subtitle: "Hello",
-        //src: require('@/assets/pics/php_logo.jpg'),
-        flex: 6,
-        width: "600",
-        text: "Hello",
-        show: false
-      },
-      {
-        title: "Best airlines",
-        subtitle: "Hello",
-        //src: require("@/assets/pics/php_logo.jpg"),
-        flex: 6,
-        width: "600px",
-        show: false
-      },
-      {
-        title: "Best airlines",
-        subtitle: "Hello",
-        //src: require("@/assets/pics/php_logo.jpg"),
-        flex: 12,
-        width: "600px",
-        show: false
-      }
-    ]
-  })
+
+  }),
+  computed: {
+    jsonData() {
+      return states.ueber_mich.map(item => {
+        return item;
+      });
+    }
+  }
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+
+</style>

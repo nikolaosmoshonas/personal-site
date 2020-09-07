@@ -1,21 +1,19 @@
 <template>
   <nav>
-    <v-app-bar id="appbar"
+    <v-app-bar
+      id="appbar"
       dark
       :collapse-on-scroll="collapseOnScroll"
       flat
       shrink-on-scroll
       app
     >
-
-
-
       <v-app-bar-nav-icon
         color="black"
         @click="drawer = true"
       ></v-app-bar-nav-icon>
 
-      <v-toolbar-title>Nikolaos Moshonas</v-toolbar-title>
+      <v-toolbar-title class="text-wrap">Nikolaos Moshonas</v-toolbar-title>
       <v-spacer></v-spacer>
 
       <v-btn icon>
@@ -23,7 +21,6 @@
           href="https://google.com"
           class=" white--text text-decoration-none"
           target="_blank"
-
           ><v-icon>mdi-linkedin</v-icon></a
         >
       </v-btn>
@@ -37,18 +34,13 @@
         >
       </v-btn>
 
-  <v-switch
-      class="mt-3 ml-3"
-
-            v-model="$vuetify.theme.dark"
-            hide-details
-            inset
-            label="Theme"
-
-  ></v-switch>
-
-
-
+      <v-switch
+        class="mt-3 ml-3"
+        v-model="$vuetify.theme.dark"
+        hide-details
+        inset
+        label="Theme"
+      ></v-switch>
     </v-app-bar>
 
     <v-navigation-drawer v-model="drawer" temporary fixed>
@@ -83,15 +75,13 @@ export default {
         text: "Projects",
         route: "/projects"
       }
-    ],
+    ]
   })
 };
 </script>
 
 <style scoped>
-
-#appbar{
+#appbar {
   background: linear-gradient(to right, #3e5151, #decba4);
 }
-
 </style>
