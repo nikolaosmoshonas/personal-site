@@ -18,7 +18,7 @@
 
       <v-btn icon>
         <a
-          href="https://google.com"
+          href="https://www.linkedin.com/in/nikolaosmoshonas/"
           class=" white--text text-decoration-none"
           target="_blank"
           ><v-icon>mdi-linkedin</v-icon></a
@@ -27,7 +27,7 @@
 
       <v-btn icon>
         <a
-          href="https://google.com"
+          href="https://github.com/nikolaosmoshonas"
           class=" white--text text-decoration-none"
           target="_blank"
           ><v-icon>mdi-github</v-icon></a
