@@ -73,7 +73,7 @@ export default {
         flex: 6,
         width: "600",
         text: "Diese Applikation wurde mit Android Studio umgesetzt. Es war ein Projekt in der Informatikmittelschule, bei dem man eine App realisieren sollte." +
-            " Meine Idee war es, etwas zu programmieren, was im Alltag nützlich sein könnte. Mit der App ist es möglich Notizen hinzufügen via QR-Code oder Eingabe und diese zu mit Mitmenschen schnell zu teilen.",
+            " Meine Idee war es, etwas zu programmieren, was im Alltag nützlich sein könnte. Mit der App ist es möglich Notizen hinzuzufügen via QR-Code oder Eingabe und diese mit Mitmenschen schnell zu teilen.",
         show: false,
         linkText: "Download QR-Notes",
         link: "https://drive.google.com/file/d/15BtGitlrelFLqZZ47j47CGacuX0cfGFj/view?usp=sharing"
